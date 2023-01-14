@@ -14,9 +14,11 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
-    margin: 85px 120px;
+    padding: 85px 120px;
+    align-items: center;
+   
 }
-.logo-section a{
+.menu-logo a{
     text-decoration: none;
     color: #000;
     font-size: 24px;
@@ -46,16 +48,19 @@ body{
     margin: 85px 120px;
     justify-content: space-between;
     align-items: center;
+    
 }
 .text-area h3{
     font-size: 52px;
     line-height: 70px;
 }
+.text-area{
+    width: 582px;
+} *
 .text-area p{
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
-    width: 505px;
     padding: 16px 0;
 }
 .text-area button{
@@ -74,6 +79,52 @@ body{
 .image-area img{
     border: 3px solid #F7F0FF; 
     border-radius: 50%;
+    width: 100%
+}
+
+/* logo section styles */
+.logo-section{
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+   text-align: center;
+   align-items: center;
+   justify-content: space-between;
+   margin: 100px 165px;
+  
+}
+
+/* collection section styles */
+.collection{
+    margin: 0 195px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    row-gap: 30px;
+}
+.article-section{
+    box-shadow: 1px 3px 30px #ddd;
+    width: 300px;
+    padding:  15px;
+    border-radius: 7px;
+}
+.article-section img{
+    width: 300px;
+    height: 256px;
+}
+.article-header{
+    font-size: 28px;
+    font-weight: 500px;
+}
+.price{
+    font-size: 24px;
+    font-weight: 400;
+}
+.star{
+    color: #FB8200;
+}
+.description{
+    font-size: 14px;
+    color: #787885;
 }
 
 
@@ -93,10 +144,22 @@ body{
    .header-section{
     display: none;
    }
+   .text-area {
+    width: 350px;
+   }
    .camera{
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
     align-items: center;
     gap: 30px;
-   }
+    margin: 0 20px;
   }
+   .logo-section{
+   display: none;
+   }
+
+  .collection{
+    grid-template-columns: repeat(1,1fr);
+    margin: 30px 5px;
+  }
+}
