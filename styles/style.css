@@ -94,6 +94,13 @@ body{
 }
 
 /* collection section styles */
+
+.collection-header{
+    font-size: 28px;
+    color: #3A3A3A;
+    text-align: center;
+    margin: 50px;
+}
 .collection{
     margin: 0 195px;
     display: grid;
@@ -126,9 +133,65 @@ body{
     font-size: 14px;
     color: #787885;
 }
+.right-button{
+    margin-top: 30px;
+    margin-right: 220px;
+    text-align: right;
+}
+.right-button a{
+    text-decoration: none;
+    color: #E02C6DDE;
+}
 
+.feature{
+    display: flex;
+    gap: 100px;
+    margin: 100px 165px
+}
+.feature h3{
+    font-size: 38px;
+    color: #0A0826;
+}
+.feature p{
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6C6C;
+    padding: 16px 0;
+}
+.feature button{
+    width: 150px;
+    height: 44px;
+    background: #E02C6DDE;
+    border: none;
+}
+.feature a{
+    text-decoration: none;
+   font-size: 16px;
+    color: #fff;
+}
+
+/* footer-section */
+
+.footer{
+    background-color: #0A0826;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+.footer-area p{
+    font-size: 14px;
+    padding: 10px 0;
+}
+.social-img{
+    display: flex;
+    gap: 20px;
+    font-size: 24px;
+    justify-content: center;
+    margin-top: 20px;
+}
 
 /* responsive */
+
 @media screen and (max-width: 576px) {
  
     .responsive-header{
@@ -162,4 +225,22 @@ body{
     grid-template-columns: repeat(1,1fr);
     margin: 30px 5px;
   }
+  .right-button{
+    margin-top: 7px;
+    margin-right: 30px;
+    text-align: right;
+}
+.feature{
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+    margin: 30px 15px;
+}
+.feature img{
+    width: 350px;
+    margin: 0 10px;
+}
+.footer{
+    text-align: center;
+}
 }
