@@ -14,9 +14,9 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
-    padding: 85px 120px;
+   margin-top: 85px;
+   padding: 0 120px;
     align-items: center;
-   
 }
 .menu-logo a{
     text-decoration: none;
@@ -76,10 +76,18 @@ body{
     text-decoration: none;
     color: #fff;
 }
+.image-area {
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    /* background-size: 100%; */
+    width: 475px;
+    height: 475px;
+    padding-top: 25px;
+    padding-left: 10px;
+}
 .image-area img{
-    border: 3px solid #F7F0FF; 
-    border-radius: 50%;
-    width: 100%
+    width: 440px;
+    height: 414px;
 }
 
 /* logo section styles */
@@ -216,6 +224,9 @@ body{
     align-items: center;
     gap: 30px;
     margin: 0 20px;
+  }
+  .image-area{
+    width: 350x;
   }
    .logo-section{
    display: none;
